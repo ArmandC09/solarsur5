@@ -1,0 +1,516 @@
+/*Color y tipo de letra al logo principal*/
+.logo { 
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+        .main-content-wrapper {
+            /* ESTO ES CLAVE para pantallas grandes */
+            max-width: 1400px; /* Ajusta este valor al ancho máximo deseado */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            background-color: #f0f0f0; /* Para visualizar el contenedor */
+            padding: 20px; /* Espaciado interno */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+/*Quitarle los bordes y subrayado al logo*/
+.logo_link{ 
+    text-decoration: none; 
+    border: none; 
+}
+
+/*Tipo de letra, color de fondo, color de letra, y el espacio de separacion con el margen de la pagina*/
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff; 
+    color: #4017f8; 
+    margin: 0; 
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Asegura que la barra esté encima de la imagen */
+    background-color: rgb(255, 255, 255); /* Fondo negro con 50% de opacidad */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para la sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave debajo del header */
+}
+
+header.scrolled {
+    background: rgba(1, 36, 124); /* Fondo azul con 90% de opacidad al hacer scroll */
+}
+
+
+
+header button {
+    background-color: transparent; /* Fondo transparente */
+    color: rgb(0, 0, 0); /* Color del texto */
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 5px; /* Espaciado externo */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: color 0.3s ease, background-color  0.3s ease; /* Transición suave */
+    margin-top: 20px;
+    font-size: 15px; /* Aumenta el tamaño de la letra */
+    font-family: 'Inter', sans-serif;
+}
+
+header button:hover {
+    background-color: rgba(129, 129, 129, 0.2); /* Fondo semitransparente al pasar el cursor */
+}
+
+
+.tamaño-logo {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-left: 20px;
+}
+.imagen_body {
+    background: linear-gradient(to right, #001e83, #003789, #0075C6);
+    position: absolute; /* Fija la imagen en su lugar */
+    top: 0; /* Alinea la imagen a la parte superior */
+    left: 0; /* Alinea la imagen a la esquina superior izquierda */
+    width: 100%; /* Ocupa toda la pantalla */
+    height: 424px; /* Ocupa toda la altura de la ventana */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    z-index: -1; /* Envía la imagen detrás del contenido */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    object-fit: cover;
+}
+
+
+.boton {
+    display: flex; /* Alinea los botones en fila */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espaciado entre los botones */
+    margin-top: 10px; /* Espacio entre el texto y los botones */
+    width: 40px;
+}
+
+
+
+.bloque_texto {
+    margin-top: 700px; /* Empuja el bloque hacia abajo, igual a la altura de imagen_body */
+    padding: 0px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo claro para diferenciarlo */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    font-family: 'Inter', sans-serif;
+    width: 100%; /* Asegura que no exceda el ancho de la pantalla */
+}
+
+
+
+.bloque_texto h2 {
+    font-size: 1.7rem; /* Tamaño del título */
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.bloque_texto p {
+    font-size: 1.2rem; /* Tamaño del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+form {
+    margin-right: 30px; /* Ajusta el espacio desde el borde derecho */
+    display: flex; /* Asegura que los botones estén alineados horizontalmente */
+    justify-content: flex-end; /* Alinea los botones hacia la derecha */
+    font-family: 'Inter', sans-serif;
+}
+
+.informacion {
+    display: flex; /* Activa el diseño en fila */
+    align-items: center; /* Alinea verticalmente el contenido */
+    gap: 20px; /* Espaciado entre el texto y la imagen */
+    padding: 20px;
+    margin-top: 5px;
+}
+
+
+.user {
+    background-color: #d1e7dd; /* Fondo del mensaje del usuario */
+    text-align: right;
+    color: #000000; /* Cambia el color del texto del usuario */
+}
+
+.chatbot {
+    background-color: #3357fcd7; /* Fondo del mensaje del chatbot */
+    text-align: left;
+    color: #ffffff; /* Cambia el color del texto del chatbot */
+}
+.chatbot img {
+    border-radius: 0; /* Elimina el borde redondeado */
+    background: none; /* Elimina cualquier fondo detrás de la imagen */
+    box-shadow: none; /* Elimina cualquier sombra que pueda parecer un círculo */
+}
+
+
+.chat-icon { /* Reemplaza .contenedor-icono con el selector real de tu elemento */
+    background-color: transparent !important; /* Hace el fondo transparente */
+  }  
+
+.carousel-item {
+    display: none; /* Oculta todas las diapositivas */
+}
+
+.carousel-item.active {
+    display: flex; /* Muestra solo la diapositiva activa */
+    flex-direction: row; /* Asegura que texto e imagen estén alineados */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel-content {
+    display: flex; /* Alinea el texto y la imagen en una fila */
+    align-items: center; /* Alinea verticalmente el contenido */
+    gap: 20px; /* Espaciado entre el texto y la imagen */
+}
+
+.text-box {
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.carousel-image {
+    width: 300px; /* Ajusta el ancho deseado */
+    height: 200px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Asegura que la imagen se recorte proporcionalmente */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+.carousel-wrapper {
+    position: relative; /* Necesario para posicionar los botones dentro del contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: #2445db; /* Color de fondo del rectángulo */
+    border-radius: 20px; /* Bordes circulares */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra para un efecto elevado */
+    margin: 40px auto; /* Aumenta el margen superior e inferior */
+    max-width: 800px; /* Reduce el ancho máximo del rectángulo */
+    width: 100%; /* Asegura que ocupen todo el ancho */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+button.prev, button.next {
+    position: absolute; /* Posiciona los botones dentro del contenedor */
+    top: 50%; /* Centra verticalmente los botones */
+    transform: translateY(-50%); /* Ajusta el centrado vertical */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 50%; /* Botones circulares */
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para los botones */
+}
+
+.text-carrousel {
+    font-size: 1.2rem; /* Tamaño de la letra del texto */
+    font-family: 'Inter', sans-serif;
+    color: #ffffff; /* Color del texto */
+    text-align: center; /* Centra el texto dentro del carrusel */
+    margin: 0; /* Elimina el margen */
+    padding: 10px; /* Espaciado interno */
+}
+
+button.prev {
+    left: -20px; /* Posiciona el botón a la izquierda del carrusel */
+}
+
+button.next {
+    right: -20px; /* Posiciona el botón a la derecha del carrusel */
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia el color al pasar el mouse */
+}
+
+.menu-toggle{
+    display: none; /* Oculta el botón de menú por defecto */
+}
+.mobile-menu{
+    display: none;
+}
+
+/* Menú lateral oculto por defecto */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta el menú fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease; /* Transición suave para mostrar/ocultar */
+    z-index: 1000;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin: 15px 0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: #1b6dc5;
+}
+
+/* Menú lateral activo */
+.mobile-menu.active {
+    left: 0; /* Mueve el menú dentro de la pantalla */
+}
+
+/* Asegúrate de que no haya márgenes ni desbordamientos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Ajusta el ancho de .bloque-mapa */
+.bloque-mapa {
+    background: rgba(1, 36, 124);
+    width: 100%; /* Cambia de 100vw a 100% */
+    padding: 20px 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Centra el contenido horizontalmente */
+    color: white; /* Color del texto */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Corrige el ancho de .bloque_texto */
+.bloque_texto {
+    width: 100%; /* Asegura que no exceda el ancho de la pantalla */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Asegúrate de que .imagen_body no cause desbordamiento */
+.imagen_body {
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Ajusta el ancho de .carousel-wrapper y .social-bar */
+.carousel-wrapper, .social-bar {
+    width: 100%; /* Asegura que ocupen todo el ancho */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    font-family: 'Inter', sans-serif;
+}
+
+.bloque-mapa {
+    background-color: rgb(1, 36, 124); /* Fondo azul */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    text-align: center; /* Centra el contenido dentro del bloque */
+}
+
+.contenedor-mapa {
+    display: flex; /* Activa flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente el texto y el mapa */
+    justify-content: center; /* Centra horizontalmente el texto y el mapa */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    gap: 100px; /* Espaciado entre el texto y el mapa */
+}
+
+.texto-mapa {
+    max-width: 300px; /* Limita el ancho del texto */
+    font-size: 1rem; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    font-family: 'Inter', sans-serif;
+}
+
+iframe {
+    flex: 1; /* Permite que el mapa ocupe el espacio restante */
+    max-width: 600px; /* Ancho máximo del mapa */
+    height: 450px; /* Altura del mapa */
+    border: 0; /* Elimina el borde del iframe */
+}
+
+/*Estilo para dispositivos móviles*/
+@media (max-width: 768px) {
+
+    header {
+        position: fixed;
+        z-index: 100; /* Asegura que la barra esté encima de la imagen */
+        background-color: rgba(0, 0, 0, 0.25); /* Fondo negro con 50% de opacidad */
+        color: white;
+        transition: background-color 0.3s ease; /* Transición suave */
+    }
+    
+    header.scrolled {
+        background: rgba(1, 36, 124); /* Fondo azul con 90% de opacidad al hacer scroll */
+    }
+
+    body, html {
+        overflow-x: hidden; /* Desactiva el desplazamiento horizontal */
+    }
+    
+    form {
+        display: none; /* Oculta el formulario con los botones */
+    }
+    .chat-widget{
+        display: none;
+    }
+
+    .tamaño-logo {
+        width: 150px; /* Ajusta el tamaño del logo para móviles */
+    }
+    .imagen_body{
+        width: 100%; /* Asegura que la imagen ocupe el 100% del ancho */
+        /*alargar la imagen para que ocupe toda la pantalla*/
+        height: 570px; /* Asegura que la imagen ocupe el 100% del ancho */
+        /*que la imagen se quede estatica*/
+        position: fixed; /* Fija la imagen en su lugar */
+        top: 0; /* Alinea la imagen a la parte superior */
+        left: 0; /* Alinea la imagen a la esquina superior izquierda */
+        height: 100vh; /* Ocupa toda la altura de la ventana */
+        background-size: cover; /* Cubre toda la pantalla */
+        
+    }
+    .imagen_body img {
+        width: 100%; /* Asegura que la imagen ocupe el 100% del ancho */
+        height: auto; /* Mantiene la proporción de la imagen */
+        /*brillo*/
+        filter: brightness(0.8); /* Aplica un filtro de brillo */
+    }
+    
+    .texto_central {
+        top: 50%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta el punto de referencia al centro */
+        text-align: center; /* Centra el texto */
+        display: flex; /* Activa flexbox */
+        flex-direction: column; /* Alinea los elementos verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Centra verticalmente */
+    }
+
+    .texto_central h1 {
+        font-size: 35px !important; /* Fuerza el tamaño del texto */
+        color: #ffffff; /* Mantiene el color blanco */
+    }
+
+    .texto_central p {
+        font-size: 1rem; /* Ajusta el tamaño del párrafo para móviles */
+        margin-top: 10px; /* Espaciado entre el título y el párrafo */
+    }
+
+
+    .bloque_texto h2 {
+        font-size: 1.5rem; /* Tamaño del título para móviles */
+    }
+    .bloque_texto{
+        width: 102%; /* Asegura que el bloque ocupe el 100% del ancho */
+    }
+    .bloque_texto p {
+        font-size: 1rem; /* Tamaño del párrafo para móviles */
+    }
+
+    .bloque_texto {
+        width: 100%; /* Asegura que el bloque ocupe el 100% del ancho */
+    }
+
+    .logo { 
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
